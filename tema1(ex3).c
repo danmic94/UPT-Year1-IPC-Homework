@@ -5,6 +5,10 @@
 
 int main()
 {
+    /**
+        github url : https://github.com/danmic94/UPT-Year1-IPC-Homework
+    **/
+
     /*Se introduc de la tastatură notele pentru n studenţi. Să se afişeze câţi studenţi au promovat examenul.*/
     int numar_elevi,elevi_promovati,elev_curent;
     float nota;

@@ -3,6 +3,10 @@
 #include<math.h>
 
   void main(void) {
+    /**
+        github url : https://github.com/danmic94/UPT-Year1-IPC-Homework
+    **/
+
     float a, b, c, b1, d, delta;
 
     printf("Introduceti coeficientii ecuatiei de gradul 2 mai jos pe rand.\n");

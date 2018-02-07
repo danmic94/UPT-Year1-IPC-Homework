@@ -5,6 +5,9 @@
 
 int main()
 {
+    /**
+        github url : https://github.com/danmic94/UPT-Year1-IPC-Homework
+    **/
     int number_length,current_digit,i,digit_sum;
     float input_number;
 
