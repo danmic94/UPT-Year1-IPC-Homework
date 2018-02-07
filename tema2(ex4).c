@@ -8,7 +8,7 @@ Funcţia va returna 0 dacă datele sunt egale şi 1 în caz contrar.
 struct date
 {
     short unsigned int day;
-    char month[3];
+    char month[18];
     short unsigned int year;
 };
 
@@ -17,17 +17,17 @@ int main()
     struct date date1;
     struct date date2;
 
-   /* date 1 information */
-   strcpy( date1.month, "ian");
-   date1.day = 30;
-   date1.year = 1994;
+    /* date 1 information */
+    strcpy( date1.month, "ian");
+    date1.day = 30;
+    date1.year = 1994;
 
-   /* date 2 information */
-   strcpy( date2.month, "ian");
-   date2.day = 30;
-   date2.year = 1994;
+    /* date 2 information */
+    strcpy( date2.month, "feb");
+    date2.day = 30;
+    date2.year = 1994;
 
-   compareDates(date1,date2);
+    compareDates(date1,date2);
 };
 
 int compareDates(struct date date1,struct date date2)
@@ -49,7 +49,8 @@ int compareDates(struct date date1,struct date date2)
         validation_counter++;
     }
 
-    if(validation_counter == 3){
+    if(validation_counter == 3)
+    {
         return 1;
     }
 
