@@ -18,7 +18,8 @@ int main()
 
     number_length = (int) floor(log10(abs(input_number))) + 1;
 
-    for (i = 0; i < number_length; i++ ) {
+    for (i = 0; i < number_length; i++ )
+    {
         current_digit = (int) input_number % 10;
         input_number = input_number / 10;
         digit_sum += current_digit;

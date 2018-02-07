@@ -22,23 +22,25 @@ int main()
 
     do
     {
-      printf("\n Introduceti nota pentru elevul curent cu numarul %d \n", elev_curent);
-      scanf("%f",&nota);
+        printf("\n Introduceti nota pentru elevul curent cu numarul %d \n", elev_curent);
+        scanf("%f",&nota);
 
-      if( nota <= 0 || nota > 10){
-        printf("\n Va rog introduceti o nota valida! \n");
-        continue;
-      }
+        if( nota <= 0 || nota > 10)
+        {
+            printf("\n Va rog introduceti o nota valida! \n");
+            continue;
+        }
 
-      if( nota >= 4.50){
-        elevi_promovati++;
-      }
+        if( nota >= 4.50)
+        {
+            elevi_promovati++;
+        }
 
-      numar_elevi--;
-      elev_curent++;
+        numar_elevi--;
+        elev_curent++;
     }
     while (numar_elevi > 0);
 
-   printf(" \n Numarul elevilor promovati este de %d\n", elevi_promovati);
+    printf(" \n Numarul elevilor promovati este de %d\n", elevi_promovati);
 
 }
